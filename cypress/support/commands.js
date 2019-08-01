@@ -1,3 +1,6 @@
+import { loginUI } from "./loginUI";
+
+Cypress.Commands.add("enterPhoneAndVerificationCode", loginUI);
 /* global Cypress, cy */
 /* eslint no-undef: "error" */
 Cypress.Commands.add(

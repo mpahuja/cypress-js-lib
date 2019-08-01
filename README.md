@@ -1,2 +1,2 @@
 # cypress-js-lib
-Cypress Common JS Code
+Common JS Code
