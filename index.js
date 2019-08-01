@@ -1,7 +1,3 @@
-import * as cyApiHelpers from './cypress/support/cyApiHelpers'
+const cyApiHelpers = require('./cypress/support/cyApiHelpers')
 
-const helpers = {
-    ...cyApiHelpers,
-};
-
-export default helpers;
+module.exports = cyApiHelpers;

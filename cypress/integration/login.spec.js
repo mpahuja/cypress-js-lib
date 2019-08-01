@@ -1,4 +1,4 @@
-import { generatePhoneNumber } from "../support/helpers";
+const generatePhoneNumber = require("../support/helpers");
 
 describe("Rider Login page through UI: ", () => {
     it("displays referrals after login", () => {

@@ -1,4 +1,4 @@
-import { loginUI } from "./loginUI";
+const loginUI = require("./loginUI");
 
 Cypress.Commands.add("enterPhoneAndVerificationCode", loginUI);
 /* global Cypress, cy */

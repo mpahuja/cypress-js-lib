@@ -1,7 +1,7 @@
 const MAX_RETRIES = 10;
 const RETRY_DELAY = 2000;
 
-export function waitForStatusChangeCallService(serviceName, pathname, tryCount = 0) {
+module.exports = function waitForStatusChangeCallService(serviceName, pathname, tryCount = 0) {
     return cy.callService({
         serviceName,
         pathname,

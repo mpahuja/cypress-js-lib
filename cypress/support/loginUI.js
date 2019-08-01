@@ -1,4 +1,4 @@
-export function loginUI(phoneNumber) {
+module.exports = function loginUI(phoneNumber) {
   return (
     cy
       .visit("/login")

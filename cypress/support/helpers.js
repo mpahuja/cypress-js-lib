@@ -1,7 +1,7 @@
 /**
  * Generate a random test phone number
  */
-export function generatePhoneNumber(country = "US") {
+module.exports = function generatePhoneNumber(country = "US") {
     // random digit generator
     // tslint:disable-next-line
     const d = () => String(Math.floor(Math.random() * 10));

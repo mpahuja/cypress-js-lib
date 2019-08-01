@@ -1,3 +1,6 @@
 {
-    "baseUrl": "https://www.lyft.com/"
+    "baseUrl": "https://www.lyft.com/",
+    "env": {
+        "BASE_HOST":"lyft.com"
+    }
 }

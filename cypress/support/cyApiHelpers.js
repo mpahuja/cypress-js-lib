@@ -1,13 +1,13 @@
-import { waitForStatusChangeCallService } from './utils'
+const waitForStatusChangeCallService = require('./utils')
 /**
  * Access back-end service directly during end-to-end test
  */
-export const createUser = (        
+function createUser(        
     phone_number,
     is_enterprise_user = false,
     driver = false,
     enterprise_admin = false,
-    bypass_login_challenges = true,) => {
+    bypass_login_challenges = true,){
         const data = {
             phone_number,
             is_enterprise_user,
@@ -29,7 +29,9 @@ export const createUser = (
  * Poll and Wait for the user to be in ready / active state.
  * @phoneNumber
  */
-export const getUser = (phoneNumber) => {
+function getUser(phoneNumber){
     return waitForStatusChangeCallService('e2etest-server', `/v1/user/${phoneNumber}`)
 }
+
+module.exports = { createUser, getUser }
 
