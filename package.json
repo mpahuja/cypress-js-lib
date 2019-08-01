@@ -1,0 +1,27 @@
+{
+  "name": "cypress-js-lib",
+  "version": "1.0.0",
+  "description": "Shared Cypress Code",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpahuja/cypress-js-lib.git"
+  },
+  "keywords": [
+    "cypress",
+    "framework"
+  ],
+  "author": "Manoj Pahuja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpahuja/cypress-js-lib/issues"
+  },
+  "homepage": "https://github.com/mpahuja/cypress-js-lib#readme"
+}
